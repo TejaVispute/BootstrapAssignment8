@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <style>
+    body {
+      background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);
+      height: 100vh;
+      font-family: sans-serif;
+      
+    }
+
+    .container {
+      background-color: whitesmoke;
+      width: 30%;
+      margin: 100px auto;
+      border: 1px solid grey;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 2px 2px grey;
+    }
+    .container h4{
+      font-family: sans-serif;
+      font-weight: 100;
+    }
+
+    .btn {
+      display: block;
+      width: 100%;
+      border-radius: 20px;
+
+    }
+
+    .image img {
+      width: 35px;
+    }
+
+    .company-logos {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 0px 100px
+    }
+
+    .company-logos:hover {
+      cursor: pointer;
+    }
+  </style>
+
+  <div class="container">
+    <h4 class="text-center mb-4">Login Here</h4>
+    <form action="backent.js">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="form-check d-flex justify-content-between mt-3">
+        <div class="checkbox">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label" for="flexCheckDefault">
+            Remember me
+          </label>
+        </div>
+        <div class="forgot-psw">
+          <p><a href="#">Forgot Password?</a></p>
+        </div>
+      </div>
+      <button type="button" class="btn btn-outline-info mt-4"> Submit</button>
+    </form>
+    <div class="bottomsection d-flex justify-content-center mt-3">
+      <p>Not a member?</p>
+      <p><a href="#">Register</a>
+      </p>
+    </div>
+    <div class="other-otions text-center">
+      <p>or sign in with</p>
+    </div>
+    <div class="company-logos">
+      <div class="image ">
+        <img
+          src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png"
+          alt="">
+      </div>
+      <div class="image ">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOq6Fwl5tOwY7hkIsCf7GoShY03RZk5unZMRPlcYOo1gXOA_o6qT4I9ZSlCqXGlEvNGcg&usqp=CAU"
+          alt="">
+      </div>
+
+      <div class="image ">
+        <img src="https://www.freepnglogos.com/uploads/twitter-logo-png/twitter-logo-vector-png-clipart-1.png" alt="">
+      </div>
+
+      <div class="image ">
+        <img src="https://www.seekpng.com/png/detail/8-84419_linkedin-icon-png.png" alt="">
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
